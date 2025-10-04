@@ -103,6 +103,9 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                         <div class="mb-1">
                             <label class="form-label" for="password">Password</label>
                             <input type="password" name="password" id="password" class="form-control" required>
+                            <?php if(isset($errors['logIn'])):?>
+                                <p class="text-danger"><?php echo $errors['logIn']?></p>
+                            <?php endif?>
                         </div>
 
                         <!-- Remember me and Forgot Password -->

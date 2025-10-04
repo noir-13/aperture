@@ -75,13 +75,6 @@
             <a href="index.php#howItWorks" class="text-reset">How it works</a>
           </p>
 
-          <p>
-            <a href="index.php#aboutUs" class="text-reset">About Us</a>
-          </p>
-
-          <p>
-            <a href="index.php#aboutCompany" class="text-reset">About Company</a>
-          </p>
 
           <p>
             <a href="index.php#pricing" class="text-reset">Pricing</a>

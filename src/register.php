@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <body>
     <!-- <?php include './includes/header.php'; ?> -->
-<!-- 
+    <!-- 
     <a href="index.php" class="btn back bg-light border-1 border-secondary shadow">
         <img src="./assets/back.png" class="img-fluid" alt="">
         Back to Home
@@ -101,8 +101,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <div class="text-center mb-3">
                             <h1 class=" display-1 m-0 serif">Sign up</h1>
                             <small>Join Aperture today and enjoy seamless booking, transparent pricing, and trusted pros at your fingertips.</small>
-                        </div>     
-                        
+                        </div>
+
                         <!-- First and Last Name  -->
 
                         <div class="mb-2 d-flex gap-2 flex-column flex-md-row ">
@@ -110,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 <label for="fname" class="form-label">First name</label>
                                 <input type="text" name="fname" id="fname" class="form-control" placeholder="e.g., Prince Andrew" required>
                             </div>
-                             <div class="w-100">
+                            <div class="w-100">
                                 <label for="lname" class="form-label">Last name</label>
                                 <input type="text" name="lname" id="lname" class="form-control" placeholder="e.g., Casiano" required>
                             </div>
@@ -120,7 +120,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                         <div class="mb-2">
                             <label class="form-label" for="email">Email</label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="e.g., princesuperpogi@email.com" required>
+                            <input type="email" name="email" id="email" class="form-control " placeholder="e.g., princesuperpogi@email.com" required>
+                            <?php if (isset($errors['email'])): ?>
+                                <p class="text-danger"><?php echo $errors['email'] ?></p>
+                            <?php endif ?>
                         </div>
 
                         <!-- Password -->
@@ -135,6 +138,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <div class="mb-2">
                             <label class="form-label" for="confirmPassword">Confirm Password</label>
                             <input type="password" name="confirmPassword" id="confirmPassword" class="form-control" required>
+                            <?php if (isset($errors['ConfirmPassword'])): ?>
+                                <p class="text-danger"><?php echo $errors['ConfirmPassword'] ?></p>
+                            <?php endif ?>
                         </div>
 
                         <!-- Check Terms and Condition -->
@@ -146,127 +152,125 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                         <!-- Terms and Condition Modal -->
 
-                         <div class="modal fade" id="dataModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="dataModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="dataModalLabel">Terms and Conditions</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
+                        <div class="modal fade" id="dataModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="dataModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="dataModalLabel">Terms and Conditions</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
 
-                                            <div class="mb-5">
-                                                <h1 class="serif">Aperture Terms and Conditions</h1>
+                                        <div class="mb-5">
+                                            <h1 class="serif">Aperture Terms and Conditions</h1>
 
-                                                <p>By creating an account in Aperture: Event Photography and Videography Appointment System, you agree to the following:</p>
+                                            <p>By creating an account in Aperture: Event Photography and Videography Appointment System, you agree to the following:</p>
 
-                                                <ol>
-                                                    <li>
-                                                        <strong>Account Responsibility</strong>
-                                                        <ul>
-                                                            <li>You must provide accurate and truthful information when creating an account.</li>
-                                                            <li>You are responsible for maintaining the confidentiality of your login details.</li>
-                                                            <li>Any activity under your account will be considered your responsibility.</li>
-                                                        </ul>
-                                                    </li>
+                                            <ol>
+                                                <li>
+                                                    <strong>Account Responsibility</strong>
+                                                    <ul>
+                                                        <li>You must provide accurate and truthful information when creating an account.</li>
+                                                        <li>You are responsible for maintaining the confidentiality of your login details.</li>
+                                                        <li>Any activity under your account will be considered your responsibility.</li>
+                                                    </ul>
+                                                </li>
 
-                                                    <li>
-                                                        <strong>Service Usage</strong>
-                                                        <ul>
-                                                            <li>The system is intended only for booking, scheduling, and managing event photography and videography services.</li>
-                                                            <li>Misuse of the system (e.g., fake bookings, spam, or unauthorized access) may result in account suspension or termination.</li>
-                                                        </ul>
-                                                    </li>
+                                                <li>
+                                                    <strong>Service Usage</strong>
+                                                    <ul>
+                                                        <li>The system is intended only for booking, scheduling, and managing event photography and videography services.</li>
+                                                        <li>Misuse of the system (e.g., fake bookings, spam, or unauthorized access) may result in account suspension or termination.</li>
+                                                    </ul>
+                                                </li>
 
-                                                    <li>
-                                                        <strong>Appointment Policy</strong>
-                                                        <ul>
-                                                            <li>Bookings should be made honestly with the correct details of the event.</li>
-                                                            <li>Cancellation or rescheduling must be done within the timeframe set by the service provider.</li>
-                                                            <li>Failure to comply may lead to restrictions in future bookings.</li>
-                                                        </ul>
-                                                    </li>
+                                                <li>
+                                                    <strong>Appointment Policy</strong>
+                                                    <ul>
+                                                        <li>Bookings should be made honestly with the correct details of the event.</li>
+                                                        <li>Cancellation or rescheduling must be done within the timeframe set by the service provider.</li>
+                                                        <li>Failure to comply may lead to restrictions in future bookings.</li>
+                                                    </ul>
+                                                </li>
 
-                                                    <li>
-                                                        <strong>Content and Ownership</strong>
-                                                        <ul>
-                                                            <li>All media files (photos, videos) produced belong to the photographer/videographer unless stated otherwise in the service agreement.</li>
-                                                            <li>Clients are prohibited from using Aperture to distribute or upload unlawful or offensive materials.</li>
-                                                        </ul>
-                                                    </li>
+                                                <li>
+                                                    <strong>Content and Ownership</strong>
+                                                    <ul>
+                                                        <li>All media files (photos, videos) produced belong to the photographer/videographer unless stated otherwise in the service agreement.</li>
+                                                        <li>Clients are prohibited from using Aperture to distribute or upload unlawful or offensive materials.</li>
+                                                    </ul>
+                                                </li>
 
-                                                    <li>
-                                                        <strong>System Rights</strong>
-                                                        <ul>
-                                                            <li>The developers reserve the right to update, modify, or suspend the system for improvements or maintenance.</li>
-                                                            <li>Terms may be updated from time to time, and users will be notified within the system.</li>
-                                                        </ul>
-                                                    </li>
-                                                </ol>
-
-                                            </div>
-
-                                            <div>
-                                                <h1 class="serif">Aperture Privacy Notice</h1>
-
-                                                <p>Your privacy is important to us. When you create an account and use Aperture, we collect and process the following information:</p>
-
-                                                <ol>
-                                                    <li>
-                                                        <strong>Information We Collect</strong>
-                                                        <ul>
-                                                            <li>Personal details (name, email, contact number).</li>
-                                                            <li>Event details (event type, date, location).</li>
-                                                            <li>Login information (email, encrypted password).</li>
-                                                        </ul>
-                                                    </li>
-
-                                                    <li>
-                                                        <strong>How We Use Your Information </strong>
-                                                        <ul>
-                                                            <li>To process and manage your bookings.</li>
-                                                            <li>To contact you about appointments, cancellations, or service updates.</li>
-                                                            <li>To improve our system and services.</li>
-                                                        </ul>
-                                                    </li>
-
-                                                    <li>
-                                                        <strong>Data Protection</strong>
-                                                        <ul>
-                                                            <li>All collected information is stored securely and will not be shared with third parties without your consent, unless required by law.</li>
-                                                            <li>We use security measures to protect your account and booking details.</li>
-                                                        </ul>
-                                                    </li>
-
-                                                    <li>
-                                                        <strong>User Rights</strong>
-                                                        <ul>
-                                                            <li>You have the right to access, update, or delete your account information.</li>
-                                                            <li>You may contact us if you have concerns about your data privacy.</li>
-                                                        </ul>
-                                                    </li>
-
-
-                                                </ol>
-                                            </div>
-
-
+                                                <li>
+                                                    <strong>System Rights</strong>
+                                                    <ul>
+                                                        <li>The developers reserve the right to update, modify, or suspend the system for improvements or maintenance.</li>
+                                                        <li>Terms may be updated from time to time, and users will be notified within the system.</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
 
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+                                        <div>
+                                            <h1 class="serif">Aperture Privacy Notice</h1>
+
+                                            <p>Your privacy is important to us. When you create an account and use Aperture, we collect and process the following information:</p>
+
+                                            <ol>
+                                                <li>
+                                                    <strong>Information We Collect</strong>
+                                                    <ul>
+                                                        <li>Personal details (name, email, contact number).</li>
+                                                        <li>Event details (event type, date, location).</li>
+                                                        <li>Login information (email, encrypted password).</li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <strong>How We Use Your Information </strong>
+                                                    <ul>
+                                                        <li>To process and manage your bookings.</li>
+                                                        <li>To contact you about appointments, cancellations, or service updates.</li>
+                                                        <li>To improve our system and services.</li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <strong>Data Protection</strong>
+                                                    <ul>
+                                                        <li>All collected information is stored securely and will not be shared with third parties without your consent, unless required by law.</li>
+                                                        <li>We use security measures to protect your account and booking details.</li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <strong>User Rights</strong>
+                                                    <ul>
+                                                        <li>You have the right to access, update, or delete your account information.</li>
+                                                        <li>You may contact us if you have concerns about your data privacy.</li>
+                                                    </ul>
+                                                </li>
+
+
+                                            </ol>
                                         </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Submit Button -->
-                            <div class="mt-3">
-                                <input type="submit" class="btn w-100 bg-dark text-light mb-1" value="Sign up">
-                                <p>Already have an account? <a href="logIn.php">Log in</a></p>
-                            </div>
-
-                            
+                        <!-- Submit Button -->
+                        <div class="mt-3">
+                            <input type="submit" class="btn w-100 bg-dark text-light mb-1" value="Sign up">
+                            <p>Already have an account? <a href="logIn.php">Log in</a></p>
+                        </div>
 
 
                     </form>
@@ -288,20 +292,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -505,13 +495,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
-
 
 
 

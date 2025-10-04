@@ -261,21 +261,21 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                 <form method="POST" class="text-light justify-content-center d-flex flex-column align-items-center"
                 id="contactForm">
 
-                    <h1 class="fw-bold display-3">Contact us</h1>
+                    <h1 class="fw-bold display-3 serif">Contact us</h1>
 
                     <div class="w-100 mb-3">
                         <label for="#fullName" class="form-label ">Full Name</label>
-                    <input type="text" name="fullName" id="fullName" class="form-control" required>
+                    <input type="text" name="fullName" id="fullName" class="form-control " required>
                     </div>
 
                     <div class="w-100 mb-3">
                         <label for="#email" class="form-label ">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" required>
+                    <input type="email" name="email" id="email" class="form-control " required>
                     </div>
 
                     <div class="w-100 mb-3 d-flex flex-column">
                         <label for="#mess" class="form-label ">Message</label>
-                        <textarea name="mess" id="mess" class="form-control" rows="5" required></textarea>
+                        <textarea name="mess" id="mess" class="form-control bg-light" rows="5" required></textarea>
                     </div>
                     
                     <input type="submit" class="btn text-light w-100" value="Send Message">
