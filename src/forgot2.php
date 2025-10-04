@@ -17,60 +17,43 @@
 
 
 
-    <section class="w-100 min-vh-100 py-5 px-2 d-flex justify-content-center align-items-center" id="forgot2">
+    <section class="w-100 min-vh-100  p-0 p-sm-2  d-flex justify-content-center align-items-center" id="forgot1">
 
-        <div class="container justify-content-center shadow rounded bg-light p-2 p-md-3 p-lg-5 ">
-            <div class="row justify-content-center align-items-center">
-                <div class="col d-none d-md-inline">
+        <div class="container justify-content-center px-4 p-md-3">
+            <div class="row justify-content-center align-items-center bg-white shadow p-3 rounded-4">
+                <div class="col d-none d-md-inline p-4 rounded-4 overflow-hidden bg-secondary">
                     <img src="./assets/undraw_forgot-password_nttj.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col">
-                     <form action="" method="POST" class=" px-1 py-3 justify-content-center">
-                        
+                    <form action="" method="POST" class=" px-1 py-3 justify-content-center">
 
                         <div class="text-center mb-3">
-                            <h1 class=" display-3 m-0 serif">Create a new password</h1>
+                            <h1 class=" display-3 m-0 serif">Create new Password</h1>
                             <p>Your new password should be at least 8 characters long.</p>
                         </div>
 
 
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><img src="./assets/padlock.png" alt=""></span>
-                            <div class="form-floating">
-                                <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control" value="<?= htmlspecialchars($password ?? '') ?>" aria-describedby="passMess" required>
-                                <label for="password" class="form-label">Password</label>
-                            </div>
-                        </div>
-                       
+                         <!-- Password -->
 
-
-                        <div class="mb-3">
-
-                            <div class="input-group ">
-                                <span class="input-group-text"><img src="./assets/padlock.png" alt=""></span>
-                                <div class="form-floating">
-                                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Confirm your Password" class="form-control  " value="<?= htmlspecialchars($confirmPassword ?? '') ?>" required>
-                                    <label for="ConfirmPassword" class="form-label">ConfirmPassword</label>
-
-                                </div>
-
-                            </div>
-                            <?php if (isset($errors['ConfirmPassword'])): ?>
-                                <small class="d-block text-danger"><?php echo $errors['ConfirmPassword']; ?></small>
-                            <?php endif; ?>
+                        <div class="mb-2">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" required>
                         </div>
 
-                     
+                        <!-- Confirm Password -->
 
-                        
+                        <div class="mb-2">
+                            <label class="form-label" for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" class="form-control" required>
+                        </div>
 
-                     
 
+                        <!-- <input type="submit" value="Send Verification Code" class="btn bg-dark text-light w-100 my-2 py-2"> -->
 
-
-                        <input type="submit" value="Reset Password" class="btn bg-dark text-light w-100 py-2 my-1">
-                        <a href="login.php" class="btn bg-light text-dark border w-100 my-2 py-2">Back to Login</a>
-
+                        <div class="my-3">
+                            <a href="forgot2.php" class="btn bg-dark text-light w-100 mb-2">Confirm new password</a>
+                            <a href="login.php" class="btn bg-light text-dark border w-100 mb-2">Back to Login</a>
+                        </div>
                         
 
                     </form>

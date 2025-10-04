@@ -16,10 +16,10 @@ if (!isset($_SESSION['userId'])){
     <title>Home</title>
 </head>
 <body>
-    <?php include './includes/header.php'; ?>
+  
      
   <section class="w-100 min-vh-100 p-5 justify-content-center align-content-center" >
-
+   
   <?php if(isset($_SESSION['fullName'])): ?>
   <h1 class="bg-light text-dark"><?php echo $_SESSION['fullName']; ?></h1>
   <?php endif ?>  

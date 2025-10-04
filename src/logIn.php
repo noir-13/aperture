@@ -68,13 +68,86 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 <body>
     <!-- <?php include './includes/header.php'; ?> -->
 
-    <a href="index.php" class="btn back bg-light border-1 border-secondary shadow">
+    <!-- <a href="index.php" class="btn back bg-light border-1 border-secondary shadow">
         <img src="./assets/back.png" class="img-fluid" alt="">
         Back to Home
-    </a>
+    </a> -->
+
+    <section class="w-100 min-vh-100  p-0 p-sm-2  d-flex justify-content-center align-items-center" id="logSection">
+
+        <div class="container justify-content-center px-4 p-md-3">
+            <div class="row justify-content-center align-items-center bg-white shadow p-3 rounded-4">
+
+                <div class="col d-none d-lg-inline p-4 rounded-4 bg-secondary overflow-hidden">
+                    <img src="./assets/undraw_secure-login_m11a (1).svg" class="img-fluid object-fit-cover" alt="">
+                </div>
 
 
-    <section class="w-100 min-vh-100 py-5 px-2 d-flex justify-content-center align-items-center" id="logSection">
+                <div class="col">
+                    <form action="" method="POST" class="p-4">
+                         <div class="text-center mb-3">
+                            <h1 class=" display-3 m-0 serif">Log in</h1>
+                            <p>Please enter your registered email address and password to securely access your Aperture account.</p>
+                        </div>     
+                        
+                        
+                        <!-- Email  -->
+
+                        <div class="mb-2">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="e.g., princesuperpogi@email.com" required>
+                        </div>
+
+                        <!-- Password -->
+
+                        <div class="mb-1">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" required>
+                        </div>
+
+                        <!-- Remember me and Forgot Password -->
+
+                        <div class="mb-2 d-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                <input type="checkbox" name="remember" id="remember" class="form-check-input">
+                                <label for="remember" class="form-check-label">Remember me</label>
+                            </div>
+
+                            <a href="forgot1.php">Forgot Password?</a>
+                        </div>
+
+                       
+                        <!-- Submit Button -->
+                            <div class="mt-3">
+                                <input type="submit" class="btn w-100 bg-dark text-light mb-1" value="Log in">
+                                <p>Don't have an account? <a href="register.php">Sign up</a></p>
+                            </div>
+
+                            
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    
+
+    <!-- <?php include './includes/footer.php'; ?> -->
+
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+    <!-- <section class="w-100 min-vh-100 py-5 px-2 d-flex justify-content-center align-items-center" id="logSection">
 
         <div class="container justify-content-center shadow rounded bg-light  p-2 p-md-3 p-lg-5 ">
             <div class="row justify-content-center align-items-center">
@@ -137,12 +210,4 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
             </div>
         </div>
 
-    </section>
-
-    <!-- <?php include './includes/footer.php'; ?> -->
-
-    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
-
-</html>
+    </section> -->

@@ -74,7 +74,7 @@ header nav a:hover {
 
 
 .dropdown-menu{
-    background-color: #f8f9fa78;
+    background-color: #f8f9fa9f;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid #f8f9fa;
@@ -464,9 +464,9 @@ small.role:hover,
 
 #about,
 #logSection,
-#reg,
 #forgot1,
-#forgot2{
+#forgot2,
+#reg{
     background-image: url(./white-bg.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -537,15 +537,18 @@ input:focus{
     outline: none !important;
     box-shadow: none !important;
     border: 1px solid #d4af37 !important;
-
+    
 }
 
 .input-group img{
     width: 20px;
 }
 
+
+
 .input-group-text{
     background-color: #d4af37;
+    border: 1px solid #d4af37;
 }
 
 
@@ -582,4 +585,8 @@ input:checked{
 
 .back img{
     max-height: 20px;
+}
+
+label{
+    margin: 0 !important;
 }
