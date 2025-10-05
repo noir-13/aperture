@@ -201,10 +201,10 @@ $activeMember = isset($_GET['member']) ? $_GET['member'] : 'casiano';
 
 
                             <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-                                <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-                                <a href="#"><img src="./assets/github.png" alt="GitHub"></a>
-                                <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-                                <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+                                <a href="#" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
+                                <a href="#" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+                                <a href="#" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+                                <a href="#" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
                             </div>
 
                         </div>
@@ -294,10 +294,10 @@ $activeMember = isset($_GET['member']) ? $_GET['member'] : 'casiano';
 
 
                             <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-                                <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-                                <a href="#"><img src="./assets/github.png" alt="GitHub"></a>
-                                <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-                                <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+                                <a href="#" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
+                                <a href="#" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+                                <a href="#" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+                                <a href="#" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
                             </div>
 
 
@@ -387,10 +387,10 @@ $activeMember = isset($_GET['member']) ? $_GET['member'] : 'casiano';
 
 
                             <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-                                <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-                                <a href="#"><img src="./assets/github.png" alt="GitHub"></a>
-                                <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-                                <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+                                <a href="https://www.facebook.com/mariannejoi.cereno" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
+                                <a href="https://github.com/Android18-cyber" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+                                <a href="https://www.instagram.com/marian.joixzs?igsh=MXQzZ3dydjY0eGxiMQ==" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+                                <a href="https://x.com/mariannemalakas" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
                             </div>
 
                         </div>
@@ -480,10 +480,10 @@ $activeMember = isset($_GET['member']) ? $_GET['member'] : 'casiano';
 
 
                             <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-                                <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-                                <a href="#"><img src="./assets/github.png" alt="GitHub"></a>
-                                <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-                                <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+                                <a href="#" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
+                                <a href="#" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+                                <a href="#" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+                                <a href="#" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
                             </div>
 
 
@@ -547,6 +547,7 @@ $activeMember = isset($_GET['member']) ? $_GET['member'] : 'casiano';
                                     <abbr title="Figma"><img src="./assets/figma.png" alt="" class="p-2 rounded shadow"></abbr>
                                     <abbr title="React"><img src="./assets/react.png" alt="" class="p-2 rounded shadow"></abbr>
                                     <abbr title="Bootstrap 5"><img src="./assets/bootstrap-5-logo-icon.webp" alt="" class="p-2 rounded shadow"></abbr>
+                                    <abbr title="PHP"><img src="./assets/php.png" alt="" class="p-1 rounded shadow"></abbr>
 
                                 </div>
                             </section>

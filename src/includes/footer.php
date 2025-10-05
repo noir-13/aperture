@@ -10,7 +10,10 @@
     
     <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
           <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-          <a href="#"><img src="./assets/email.png" alt="GitHub"></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aperture.eventbookings@gmail.com" target="_blank">
+  <img src="./assets/email.png" alt="email">
+</a>
+
           <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
           <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
     </div>

@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     <section class="w-100 min-vh-100  p-0 p-sm-2  d-flex justify-content-center align-items-center" id="logSection">
 
         <div class="container justify-content-center px-4 p-md-3">
-            <div class="row justify-content-center align-items-center bg-white shadow p-3 rounded-4">
+            <div class="row justify-content-center align-items-center bg-white shadow p-3 rounded-5">
 
                 <div class="col d-none d-lg-inline p-4 rounded-4 bg-secondary overflow-hidden">
                     <img src="./assets/undraw_secure-login_m11a (1).svg" class="img-fluid object-fit-cover" alt="">

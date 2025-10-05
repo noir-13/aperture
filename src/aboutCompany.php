@@ -105,11 +105,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                 </div>
                 <div class="col-md-6">
                     <div class="mission">
-                        <h1 class="fw-bold">Our Mission & Values</h1>
+                        <h1 class="fw-bold serif">Our Mission & Values</h1>
                         <p>We believe every event deserves professional capture—without the stress of traditional booking hurdles.</p>
-                        <h4>Mission</h4>
+                        <h4 class="serif">Mission</h4>
                         <p>To empower clients and creatives by providing an intuitive platform for real-time bookings, clear pricing, and guaranteed quality. We solve the chaos of searching for photographers and videographers, making it easy to book for weddings, corporate events, or creative shoots with confidence.</p>
-                        <h4>Core Values</h4>
+                        <h4 class="serif">Core Values</h4>
                         <ul>
                             <li><strong>Transparency: </strong>Upfront pricing with no hidden fees, see everything before you book.</li>
                             <li><strong>Reliability: </strong>Real-time availability and on-time delivery, backed by trusted professionals.</li>
@@ -124,7 +124,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <div class="row justify-content-center align-items-start mb-5 gap-2">
                 <div class="col order-md-1 order-2">
                     <div class="">
-                        <h1 class="fw-bold">Our Story: Born from Booking Frustrations</h1>
+                        <h1 class="fw-bold serif">Our Story: Born from Booking Frustrations</h1>
                         <p>Finding the perfect photographer shouldn't be this hard—that's the insight that sparked Aperture. We started as a response to the endless challenges clients face: sifting through portfolios without clear availability, worrying about hidden fees, and struggling to compare styles for events like weddings or corporate gatherings. As a team passionate about photography and videography, we built Aperture to change that.</p>
 
                         <p>From our first prototype, we've focused on creating a platform where trusted professionals meet eager clients seamlessly. Today, Aperture connects you with experienced creatives for everything from engagements and birthdays to creative shoots and behind-the-lens sessions, ensuring quality work and on-time delivery every time.
@@ -172,7 +172,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <p class="text-dark fw-normal">Frontend Developer</p>
           </div>
           <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-            <a href="https://www.facebook.com/prince.andrew.casiano.2024"><img src="./assets/facebook-app-symbol.png" alt="Facebook" target="_blank"></a>
+            <a href="https://www.facebook.com/prince.andrew.casiano.2024" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook" ></a>
             <a href="https://github.com/noir-13" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
             <a href="https://www.instagram.com/kry_1101/" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
             <a href="https://x.com/KazuCos13" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
@@ -188,10 +188,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <p class="text-dark fw-normal">Frontend Developer</p>
           </div>
           <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-            <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-            <a href="#"><img src="./assets/github.png" alt="GitHub"></a>
-            <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
           </div>
           <a href="aboutUs.php?member=buban" class="btn border-dark text-dark learnMore">Learn more</a>
         </div>
@@ -205,10 +205,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <p class="text-dark fw-normal">Frontend Developer</p>
           </div>
           <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-            <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-            <a href="#"><img src="./assets/github.png" alt="GitHub"></a>
-            <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
           </div>
           <a href="aboutUs.php?member=centino" class="btn border-dark text-dark learnMore">Learn more</a>
         </div>
@@ -221,10 +221,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <p class="text-dark fw-normal">Frontend Developer</p>
           </div>
           <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-            <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-            <a href="#"><img src="./assets/github.png" alt="GitHub"></a>
-            <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/mariannejoi.cereno" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
+            <a href="https://github.com/Android18-cyber" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/marian.joixzs?igsh=MXQzZ3dydjY0eGxiMQ==" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+            <a href="https://x.com/mariannemalakas" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
           </div>
           <a href="aboutUs.php?member=cereno" class="btn border-dark text-dark learnMore">Learn more</a>
         </div>
@@ -237,10 +237,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <p class="text-dark fw-normal">Frontend Developer</p>
           </div>
           <div class="socmed justify-content-center align-items-center d-flex flex-row gap-3">
-            <a href="#"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
-            <a href="#"><img src="./assets/github.png" alt="GitHub"></a>
-            <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="./assets/facebook-app-symbol.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
           </div>
           <a href="aboutUs.php?member=conosido" class="btn border-dark text-dark learnMore">Learn more</a>
         </div>

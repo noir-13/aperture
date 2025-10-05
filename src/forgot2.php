@@ -20,7 +20,7 @@
     <section class="w-100 min-vh-100  p-0 p-sm-2  d-flex justify-content-center align-items-center" id="forgot1">
 
         <div class="container justify-content-center px-4 p-md-3">
-            <div class="row justify-content-center align-items-center bg-white shadow p-3 rounded-4">
+            <div class="row justify-content-center align-items-center bg-white shadow p-3 rounded-5">
                 <div class="col d-none d-md-inline p-4 rounded-4 overflow-hidden bg-secondary">
                     <img src="./assets/undraw_forgot-password_nttj.svg" class="img-fluid" alt="">
                 </div>

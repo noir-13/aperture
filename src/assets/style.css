@@ -217,7 +217,7 @@ hr {
 }
 
 .serif {
-    font-family: 'DM Serif Display', "serif";
+    font-family: 'DM Serif Display', serif;
     font-weight: 400;
     color: #d4af37;
 }
@@ -369,11 +369,12 @@ small.role,
     transition: transform .3s ease-in-out;
 }
 small.role:hover,
-.techStack img:hover,
 .skillSet small:hover {
     transform: scale(1.1);
 }
-
+.techStack img:hover{
+    transform: translateY(-3px);
+}
 .profileNav{
     position: absolute;
     right: 0;
@@ -397,6 +398,10 @@ small.role:hover,
 #navbarMembers ul li a.active{
     color: #f8f9fa;
     background-color: #212529;
+}
+
+#navbarMembers ul li a:hover{
+    opacity: .5;
 }
 
 .infoContainer .info,
